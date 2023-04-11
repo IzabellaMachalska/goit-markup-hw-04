@@ -13,6 +13,7 @@
   --text-color-contact-footer: rgba(255, 255, 255, 0.6);
   --border-bottom-color: #ececec;
   --border-bottom-color-main-por: #eeeeee;
+  --icon-color: #afb1b8;
 }
 * {
   margin: 0;
@@ -101,18 +102,20 @@ body {
 }
 
 /* SEKCJA HERO */
-.hero-main-bg {
-  background-image: url('/images/main8.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4));
-  max-width: 1600рх;
-  }
 .hero-main {
   background-color: var(--background-box-primary);
+}
+.hero-main-bg {
   padding: 200px 0;
   text-align: center;
-  }
+  background-image: url('/images/main8.jpg');
+  /* background:  linear-gradient (0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(47, 48, 58, 0.4), url('/images/main8.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 1600px;
+}
 
 .headline-primary {
   color: var(--text-color-light);
@@ -123,7 +126,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
-  padding-top: 200px;
+  /* padding-top: 200px; */
 }
 .button-headline {
   font-family: var(--font-primary);
@@ -144,6 +147,12 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+.asset-icons {
+  padding: 25px 100px;
+  background-color: var(--background-box-secondary);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .headline-asset {
   color: var(--text-color-primary);
@@ -192,6 +201,22 @@ body {
 }
 .light-secondary {
   background-color: var(--background-box-secondary);
+}
+
+.team-icons :hover,
+.team-icons :focus {
+  fill: var(--text-color-light);
+  background-color: var(--background-button);
+  border-radius: 50%;
+}
+.team-icons {
+  display: flex;
+  gap: 10px;
+  fill: var(--icon-color);
+  border-radius: 50%;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
 }
 /* SEKCJA STOPKA */
 .footer {
