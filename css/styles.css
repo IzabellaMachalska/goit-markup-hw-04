@@ -6,6 +6,7 @@
   --background-box-primary: #2f303a;
   --background-box-secondary: #f5f4fa;
   --background-button: #2196f3;
+  --background-button-footer: rgba(255, 255, 255, 0.1);
   --text-color-primary: #212121;
   --text-color-secondary: #757575;
   --text-color-blue: #2196f3;
@@ -18,6 +19,7 @@
   --icon-color: #afb1b8;
   --icon-color-blue: #2196f3;
   --icon-contanct-color: #757575;
+  --icon-color-light: #ffffff;
 }
 * {
   margin: 0;
@@ -91,6 +93,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  display: flex;
+  gap: 10px;
 }
 .link-contact:hover,
 .link-contact:focus {
@@ -115,14 +119,14 @@ body {
 .hero-main-bg {
   padding: 200px 0;
   text-align: center;
-  background-image: url('/images/main8.jpg');
-  background:  linear-gradient (0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(47, 48, 58, 0.4), url('/images/main8.jpg');
+
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/main8.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px, cover;
   width: 100%;
 }
-
 .headline-primary {
   color: var(--text-color-light);
   max-width: 696px;
@@ -132,8 +136,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
-  /* padding-top: 200px; */
-}
+  }
 .button-headline {
   font-family: var(--font-primary);
   font-weight: 700;
@@ -223,23 +226,22 @@ body {
   padding: 16px 32px 30px;
 }
 /* SEKCJA NASI KLIENCI */
-/* .clients-icons {
-  display: flex;
-  gap: 30px;
-} */
 .clients-icons-items {
   width: 170px;
   height: 92px;
   fill: var(--icon-color);
-  padding: 17.71px 32px 14.25px;
   border: 1px solid var(--border-icon);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.clients-icons-items :hover,
-.clients-icons-items :focus {
-  border: 1px solid var(--border-icon-blue);
+.clients-icons-items:hover,
+.clients-icons-items:focus {
+  border-color: var(--border-icon-blue);
   fill: var(--icon-color-blue);
 }
+
 /* SEKCJA STOPKA */
 .footer {
   background-color: var(--background-box-primary);
@@ -264,6 +266,43 @@ body {
   line-height: 1.7;
   margin-bottom: 9px;
 }
+.footer-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-social-link {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  
+}
+.headline-footer {
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  padding-bottom: 20px;
+  padding-top: 12px;
+}
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  fill: var(--icon-color);
+}
+.footer-icons :hover,
+.footer-icons :focus {
+  fill: var(--text-color-light);
+  background-color: var(--background-button);
+  border-radius: 50%;
+}
+
+.footer-icons-items {
+  background-color: var(--background-button-footer);
+  fill: var(--icon-color-light);
+  border-radius: 50%;
+}
+
 /* KARTA POTFOLIO */
 .primary-portfolio-list {
   display: flex;
@@ -309,4 +348,8 @@ body {
 }
 .list-main-por {
   border: 1px solid var(--border-bottom-color-main-por);
+}
+.main-por :hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
