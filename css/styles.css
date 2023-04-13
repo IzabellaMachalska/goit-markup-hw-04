@@ -33,7 +33,8 @@ a {
   text-decoration: none;
 }
 button,
-svg {
+svg,
+.list-main-por {
   cursor: pointer;
 }
 
@@ -252,8 +253,8 @@ body {
 }
 .link-footer {
   display: block;
-  padding: 20px 0;
-}
+  margin-top: 20px;
+  }
 .link-contact-footer {
   color: var(--text-color-contact-footer);
   font-size: 14px;
@@ -265,6 +266,9 @@ body {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 9px;
+}
+.logo-footer {
+  margin-bottom: 20px;
 }
 .footer-box {
   display: flex;
@@ -289,14 +293,13 @@ body {
   display: flex;
   gap: 10px;
   fill: var(--icon-color);
-}
+  }
 .footer-icons :hover,
 .footer-icons :focus {
   fill: var(--text-color-light);
   background-color: var(--background-button);
   border-radius: 50%;
 }
-
 .footer-icons-items {
   background-color: var(--background-button-footer);
   fill: var(--icon-color-light);
@@ -349,7 +352,4 @@ body {
 .list-main-por {
   border: 1px solid var(--border-bottom-color-main-por);
 }
-.main-por :hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
+.list-main-por:hover { box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
