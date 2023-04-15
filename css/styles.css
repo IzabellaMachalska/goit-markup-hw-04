@@ -294,16 +294,25 @@ body {
   display: flex;
   gap: 10px;
   fill: var(--icon-color);
+  align-items: center;
+  justify-content: center;
 }
-.footer-icons :hover,
+/* .footer-icons :hover,
 .footer-icons :focus {
   fill: var(--text-color-light);
   background-color: var(--background-button);
   border-radius: 50%;
-}
-.footer-icons-items {
+} */
+.footer-icons-items:hover,
+.footer-icons-items:focus{
   background-color: var(--background-button-footer);
   fill: var(--icon-color-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
 }
 
