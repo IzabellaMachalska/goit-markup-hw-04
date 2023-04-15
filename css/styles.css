@@ -215,18 +215,28 @@ body {
 .light-secondary {
   background-color: var(--background-box-secondary);
 }
-
-.team-icons :hover,
-.team-icons :focus {
-  fill: var(--text-color-light);
-  background-color: var(--background-button);
-  border-radius: 50%;
-}
 .team-icons {
   display: flex;
   gap: 10px;
+  /* background-color: #757575; */
   fill: var(--icon-color);
   padding: 16px 32px 30px;
+}
+
+.team-icons-items:hover,
+.team-icons-items:focus {
+  fill: var(--text-color-light);
+  background-color: var(--background-button);
+ }
+
+.team-icons-items {
+  fill: var(--icon-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 /* SEKCJA NASI KLIENCI */
 .clients-icons-items {
@@ -293,7 +303,6 @@ body {
 .footer-icons {
   display: flex;
   gap: 10px;
-  fill: var(--icon-color);
   align-items: center;
   justify-content: center;
 }
@@ -304,10 +313,11 @@ body {
   border-radius: 50%;
 } */
 .footer-icons-items:hover,
-.footer-icons-items:focus{
+.footer-icons-items:focus{ background-color: var(--icon-color-blue);}
+
+.footer-icons-items {
   background-color: var(--background-button-footer);
   fill: var(--icon-color-light);
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
